@@ -358,8 +358,7 @@ if not DEBUG:
 
 if DEBUG:
     # Allow all hosts in development
-    ALLOWED_HOSTS = ['*']
-    
+    ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'localhost']    
     # Add CSRF trusted origins for development
     CSRF_TRUSTED_ORIGINS += [
         'http://127.0.0.1:8000',
